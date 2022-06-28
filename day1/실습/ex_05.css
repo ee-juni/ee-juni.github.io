@@ -1,0 +1,11 @@
+.paragraph {
+    width: 500px;
+    height: 500px;
+    background-color: #6936b5;
+    font-size: 50px;
+    /* font-size: 20em ==> em은 기기별 표현가능 최소 크기; */
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family는 적힌 순서대로 search후 존재하면 사용, 없으면 다음 거  */
+}

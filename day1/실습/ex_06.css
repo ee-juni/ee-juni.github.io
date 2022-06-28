@@ -1,0 +1,94 @@
+/* 아래 코드는 문제 해결을 위해 기본적으로 제공되는 코드입니다. 수정하지 마세요! */
+* {
+    margin : 0;
+    padding : 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.head {
+    background-color : red;
+    width : 100%;
+    height : 20%;
+}
+
+.head #orangePiece {
+    background-color : orange;
+    width : 25%;
+    height : 100%;
+    /* 지시사항 1번을 하세요. */
+    float : right
+}
+
+.head #yellowPiece {
+    background-color : yellow;
+    width : 25%;
+    height : 100%;
+    /* 지시사항 1번을 하세요. */
+    float : right
+}
+
+
+
+main {
+    background-color: navy;
+    width: 100%;
+    height: 60%;
+}
+
+main #leftPiece{
+    background-color: blue;
+    width : 25%;
+    height : 50%;
+    /* 지시사항 2번을 하세요. */
+    float : left
+}
+
+main #rightPiece{
+    background-color: green;
+    width : 25%;
+    height : 50%;
+    /* 지시사항 2번을 하세요. */
+    float : right
+
+}
+
+main #purplePiece{
+    background-color: purple;
+    width : 100%;
+    height : 10%;
+    /* 지시사항 3번을 하세요. */
+    clear: both
+}
+
+main #greenPiece{
+    background-color: green;
+    width : 100%;
+    height : 10%;
+}
+
+.foot {
+    background-color :black;
+    width : 100%;
+    height : 20%;
+}
+
+
+.foot #orangePiece {
+    background-color : orange;
+    width : 25%;
+    height : 100%;
+    /* 지시사항 4번을 하세요. */
+    float: left
+}
+
+.foot #yellowPiece {
+    background-color : yellow;
+    width : 25%;
+    height : 100%;
+    /* 지시사항 4번을 하세요. */
+    float: left
+}

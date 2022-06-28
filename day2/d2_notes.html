@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 [ Web Info & Design ]</title>
+    <link rel="stylesheet" href="d2_notes.css">
+
+</head>
+<body>
+    <header>
+    <div>
+        <h1>Day2 Notes<br/>[ Web Info & Design ]</h1>
+        <h4>학습 목차</h4>
+        <nav>
+            <ol>
+                <li><a href="#1">웹 구성 요소</a></li>
+                <li><a href="#2">HTML 주요 태그</a></li>
+                <li><a href="#3">공간 만들기 태그</a></li>
+                <li><a href="#4">HTML의 두가지 성격</a></li>
+                <li><a href="#5">CSS</a></li>
+                <li><a href="#6">CSS 선택자</a></li>
+                <li><a href="#7">부모 자식 관계</a></li>
+                <li><a href="#8">Cascading</a></li>
+                <li><a href="#9">CSS 주요 속성</a></li>
+                
+            </ol>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+
+    <article>
+        <h2 id="1">1. 웹 구성 요소</h2>
+        <h3>프로그래밍이란?</h3>
+        <ul>
+            <li>컴퓨터와 소통하는 방법</li>
+            <li>정보 제공 방법 및 제어 방법 결정 가능</li>
+            <li>웹 개발 언어(HTML, CSS, JS)는 브라우저와 소통함</li>
+        </ul>
+        <h3>웹 개발 언어의 역할</h3>
+        <ul>
+            <li>HTML - 정보 및 설계도</li>
+            <li>CSS - 디자인, 스타일링</li>
+            <li>JS - 기능과 효과</li>
+        </ul>
+        <h3>웹 제작 고려 사항</h3>
+        <ul>
+            <li>웹 표준: 공식 표준이나 기술 규격 -> 강제성 띄지 않지만 검색 노출도 높아짐</li>
+            <li>웹 접근성: 장애 여부 상관없이 모두 사용 가능</li>
+            <li>크로스 브라우징: 모든 브라우저 및 기기에서 정상 작동하는지</li>
+        </ul>
+    </article>
+
+    <article>
+        <h2 id="2">2. HTML 주요 태그</h2>
+        <h3>HTML 태그 구성 요소</h3>
+        <p><b>Ex) <열린태그 속성 = "속성값">컨텐츠</닫힌태그></b></p>
+        <ul>
+            <li>태그명: HTML의 <b>고유 기능</b> 명시</li>
+            <li>컨텐츠: 태그 사이에 담긴 <b>내용물</b></li>
+            <li>속성: HTML 태그가 지닌 <b>추가 정보</b></li>
+            <li>속성값: 어떤 역할을 수행할지 <b>구체적인 명령</b>을 진행하는 것</li>
+        </ul>
+        <h3>HTML 문서의 기본 구조</h3>
+        <ul>
+            <li> !DOCTYPE html | HTML5라는 신조어로 문서를 선언</li>
+            <li> html>.../html> | 문서의 start & end</li>
+            <li>head: 웹페이지 요약 정보(hidden)</li>
+            <li>meta charset: 문자 코드. 유니코드 사용(UTF-8)</li>
+            <li>title: website 제목</li>
+            <li>body: explicit(visible) info</li>
+        </ul>
+        <h3>img 태그</h3>
+        <img src="imgtag.png" alt="이미지 태그 설명">
+        <h3>h 태그</h3>
+        <p>Heading의 약자. 제목/부제목 표현.<br/><b>숫자는 정보의 중요도.</b><br/>h1은 문서 당 한번만 사용.</p>
+        <h3>p 태그</h3>
+        <p>paragraph. 본문 내용</p>
+        <h3>ul 태그</h3>
+        <p>unordered list. 순서 없는 리스트.<br/>menu button에 주로 사용.</p>
+        <h3>a 태그</h3>
+        <p>anchor의 약자. 링크로 이동.<br/>href="링크"<br/>target="접근방식(기본 _blank)"</p>
+    </article>
+
+    <article>
+        <h2 id="3">3. 공간 만들기 태그</h2>
+        <h3>HTML 태그 구성 요소</h3>
+        <ul>
+            <li>목차 - header</li>
+            <li>본문 - body</li>
+            <li>부록 - footer</li>
+        </ul>
+        <h3>header, nav 태그</h3>
+        <ul>
+            <li>header: 머리글</li>
+            <li>nav: 메뉴 버튼 담아 with ul,li,a</li>
+        </ul>
+        <h3>main, article 태그</h3>
+        <ul>
+            <li>보통 main(본문)>article(정보)</li>
+            <li>main 태그에 role="main" 속성 넣어줘야 for IE</li>
+            <li>article>h# 태그 내 구역 대표 타이플 필수!!</li>
+        </ul>
+        <h3>footer 태그</h3>
+        <ul>
+            <li>하단 정보 표시</li>
+        </ul>
+        <h3>div 태그</h3>
+        <ul>
+            <li>cf) div 태그 - 임의의 공간 생성.</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </article>
+
+    <article>
+        <h2 id="4">4. HTML의 두가지 성격</h2>
+        <h3>Block 요소와 Inline 요소</h3>
+        <p>
+            두 요소 구분 특징: 줄바꿈 현상, 가로세로상하 배치 가능 여부
+        </p>
+        <h3>Block 요소</h3>
+        <ul>
+            <li>y축 정렬 형태로 출력</li>
+            <li>공간 설정 가능</li>
+            <li>상하 배치 가능</li>
+        </ul>
+        <h3>Inline 요소</h3>
+        <ul>
+            <li>x축 정렬 형태로 출력</li>
+            <li>공간 설정 불가</li>
+            <li>상하 배치 불가</li>
+        </ul>
+    </article>
+
+    <article>
+        <h2 id="5">5. Cascading Style Sheet</h2>
+        <p>문서의 레이아웃 및 스타일 정의. HTML을 꾸며줌.</p>
+        <h3>CSS 구성 요소</h3>
+        <p><b>Ex) 선택자 { 속성 : 속성값; }</b></p>
+        <ul>
+            <li>선택자: 디자인 적용할 HTML 영역</li>
+            <li>속성: 어떤 디자인을 적용할지</li>
+            <li>속성값: 어떤 역할을 수행할지;</li>
+        </ul>
+        <h3>속성 Property</h3>
+        <p>font-size, font-family, color, background-color, text_align 등등</p>
+        <h3>CSS 연동 방법</h3>
+        <ul>
+            <li>Inline Style Sheet: ..h1 style="color: red".. </li>
+            <li>Internal Style Sheet: ..style> h1{ color: red ; }.. /style>.. </li>
+            <li>External Style Sheet: [in CSS] h1 { color: red ; }. <br/>[in HTML]..link rel="stylesheet" href="fn.css"></li>
+        </ul>
+    </article>
+
+    <article>
+        <h2 id="6">6. CSS 선택자</h2>
+        <p>HTML의 어떤 요소에 CSS를 적용할지. Tag type, class, ID에 따라 적용</p>
+        <h3>선택자</h3>
+        <ul>
+            <li>type - h2 { color: red ;}</li>
+            <li>class - [HTML] ..h2 class="sub">.. [CSS] .sub { color: red ;}</li>
+            <li>class - [HTML] ..h2 id="sub">.. [CSS] #sub { color: red ;}</li>
+        </ul>
+        <h3>속성 Property</h3>
+        <p>font-size, font-family, color, background-color, text_align 등등</p>
+        <h3>CSS 연동 방법</h3>
+        <ul>
+            <li>Inline Style Sheet: ..h1 style="color: red".. </li>
+            <li>Internal Style Sheet: ..style> h1{ color: red ; }.. /style>.. </li>
+            <li>External Style Sheet: [in CSS] h1 { color: red ; }. <br/>[in HTML]..link rel="stylesheet" href="fn.css"></li>
+        </ul>
+    </article>
+
+    <article>
+        <h2 id="7">7. 부모 자식 관계</h2>
+        <p> p>ul>li*3^ol>li*2 : p가 부모. ul, ol이 자식. ul과 ol은 형제.<br/>
+            원하는 지역에만 CSS 속성 적용 -> 부모를 표기<br/>
+            <b>Ex) header h1 { color: brown ;}</b>
+        </p>
+        <h3>선택자</h3>
+        <ul>
+            <li>type - h2 { color: red ;}</li>
+            <li>class - [HTML] ..h2 class="sub">.. [CSS] .sub { color: red ;}</li>
+            <li>class - [HTML] ..h2 id="sub">.. [CSS] #sub { color: red ;}</li>
+        </ul>
+        <h3>속성 Property</h3>
+        <p>font-size, font-family, color, background-color, text_align 등등</p>
+        <h3>CSS 연동 방법</h3>
+        <ul>
+            <li>Inline Style Sheet: ..h1 style="color: red".. </li>
+            <li>Internal Style Sheet: ..style> h1{ color: red ; }.. /style>.. </li>
+            <li>External Style Sheet: [in CSS] h1 { color: red ; }. <br/>[in HTML]..link rel="stylesheet" href="fn.css"></li>
+        </ul>
+    </article>
+
+    <article>
+        <h2 id="8">8. Cascading</h2>
+        <h3>CSS 우선순위 결정 요소</h3>
+        <p>아래 순서대로 우선순위에 놓임:</p>
+        <ul>
+            <li>순서 - 더 나중에 적용될수록</li>
+            <li>디테일 - 더 구체적일수록</li>
+            <li>선택자 - style > id > class > type 순으로 superior</li>
+        </ul>
+        <h3>속성 Property</h3>
+        <p>font-size, font-family, color, background-color, text_align 등등</p>
+        <h3>CSS 연동 방법</h3>
+        <ul>
+            <li>Inline Style Sheet: ..h1 style="color: red".. </li>
+            <li>Internal Style Sheet: ..style> h1{ color: red ; }.. /style>.. </li>
+            <li>External Style Sheet: [in CSS] h1 { color: red ; }. <br/>[in HTML]..link rel="stylesheet" href="fn.css"></li>
+        </ul>
+    </article>
+
+    <article>
+        <h2 id="9">9. CSS 주요 속성</h2>
+        <ul>
+            <li>width: %, px, etc.</li>
+            <li>height</li>
+            <li>font-family: 디폴트값은 sans-serif</li>
+            <li>font-weight: 100~900 숫자 혹은 bold, etc.</li>
+            <li>border-style: solid, dotted<br/>
+                border: solid 10px red 이런식으로<br/>
+                style width color 지정 한꺼번에 가능</li>
+            <li>background-color: color ;</li>
+            <li>background-image: url(이미지 경로) ;</li>
+            <li>background-repeat: repeat-x/y, no-repeat ;</li>
+            <li>background-position: top, bottom, center, left, right ;</li>
+            <li>backgroud: yellow url no-repeat left ;</li>
+        </ul>
+    </article>
+
+    </main>
+
+
+</body>
+</html> 
+
