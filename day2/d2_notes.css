@@ -1,8 +1,6 @@
 @import url(https://font.elice.io/EliceDigitalBaeum.css);
 
-html, body {
-        font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif; 
-      }
+html { font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif; }
 
 html {margin-left: 30%;}
 header, h2, h3, img {width: 50%;}

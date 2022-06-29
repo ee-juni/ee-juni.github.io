@@ -1,0 +1,11 @@
+/* 그룹 선택자 */
+#internet, #browser {}
+
+/* 특성 선택자 */
+input[type="button"] {}
+
+/* 자식 선택자 */
+div>p {}
+
+/* 가상 선택자 */
+div>p:hover { background-color: blueviolet;}
