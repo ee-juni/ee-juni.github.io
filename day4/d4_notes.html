@@ -19,6 +19,7 @@
                 <li><a href="#2">Transition</a></li>
                 <li><a href="#3">Animation</a></li>
                 <li><a href="#4">Transform + Animation</a></li>
+                <li><a href="#4">Area Animation</a></li>
             </ol>
         </nav>
     </div>
@@ -81,27 +82,24 @@
     </article>
 
     <article>
-        <h2 id="4">4. 레이아웃 속성</h2>
-        <h3>display</h3>
-        <p><b>{ display: inline/block/inline-block; }</b><br/>
-            block과 inline 요소의 성격을 바꿀 수 있음.
-           </p>
-        <h3>float</h3>
-        <p><b>{ float: left/right; }</b><br/>
-            왼쪽/오른쪽 끝으로부터 정렬.<br/>
-            선택자를 띄워 새로운 레이어층 만듬.</p>
-        <h3>clear</h3>
-        <p><b>{ clear: both; }</b><br/>
-            float를 쓴 바로 다음 요소를 float 아래 겹치지 않게 밀어줌</p>
-        <h3>브라우저와 공간 사이 공백 제거</h3>
-        <p><b> html, body { margin:0; padding:0; }</b><br/>
-            0으로 초기화해줌. 선택자를 *로 써도 됨 (*=select all).</p>
-            
+        <h2 id="4">4. Transform + Animation</h2>
+        <h3>Transfrom & Animation</h3>
+        <p><b>.box1{ animation: rotation 1500ms linear infinite alternate; }
+            <br/>@keyframes rotation{ from{ transform: rotate(-2deg);}<br/>
+                            to{ transform: rotate(2deg);}}</b>
+        </p>
     </article>
 
     <article>
-        <h2 id="5">5. 쇼핑몰 만들기</h2>
-        <h3><b><a href="쇼핑몰.mhtml", target="_blank">>> 보러가기 <<</a></b></h3>
+        <h2 id="4">5.Area Animation</h2>
+        <h3>Menu</h3>
+        <p><b>#intro nav ul li a {transition: ..;}<br/>
+            #intro nav ul li a:hover {color: ..;}</b>
+        </p>
+        <h3>Main</h3>
+        <p><b>#main .. {transition: ..;}<br/>
+            #main ..:hover {scale: ..;}</b>
+        </p>
     </article>
 
     </main>
