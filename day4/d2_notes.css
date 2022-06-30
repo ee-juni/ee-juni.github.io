@@ -4,17 +4,13 @@ html, body {
         font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif; 
       }
 
-html {margin-left: 30%;}
-header, h2, h3, img {width: 50%;}
+html {margin: 0 0 0 5%; padding: 0 0 0 0; }
+header, h2, h3, img {width: 90%;}
 
 body { background-color: rgb(16, 77, 112) ;
         color: whitesmoke; }
 
 header { background-color: rgb(59, 118, 160); }
-
-ol {margin-left: auto; }
-
-article {text-justify: auto; margin-left: auto;}
 
 h1 { background-color: rgb(255, 180, 31); text-align: center;}
 h2 { background-color: rgb(255, 172, 5); text-align: center; }
