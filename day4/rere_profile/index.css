@@ -46,9 +46,40 @@ img {width: 95%; margin: 10px 10px 10px 10px;}
 	grid-row-start: 2;
 	grid-row-end: 3; }
 
+#footer { clear: both; background-color: rgb(36, 69, 92); height: 50px; padding: 5px 0 10px 0;}
+#footer>ul>li { display: inline; padding: 0 20px 0 0;}
+#years {list-style: none; padding: 0 0 0 15px;}
 
+#major {float: left;}
+.container {float: left; margin: 200px 0 150px 20px;}
 
-#footer { clear: both; background-color: rgb(36, 69, 92); height: 80px; padding: 5px 5px 5px 20px;}
-
-
-/* flex(1차원 flexible box), grid(2차원)으로 레이아웃 지정 가능! */
+@media (min-width:300px) and (max-width:1000px){
+	.item:nth-child(1) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2; }
+	.item:nth-child(2) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3; }
+	.item:nth-child(3) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-end: 4; }
+	.item:nth-child(4) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 4;
+		grid-row-end: 5; }
+	#footer { clear: both; background-color: rgb(36, 69, 92); height: 65px; padding: 2px 0 30px 0; margin: 30px 0 0 0;}
+	#footer>ul>li { font-size:smaller; display: block; padding: 0 20px 0 0;}
+	header, #major { width: 90%;}
+	.container {padding: 0 0 0 0; margin: 20px 0 20px 0;}
+	#name {font-size: large;}
+	#cv {font-size: larger;}
+	#years {font-size: smaller; padding: 0 0 0 0;}
+	#years>li {margin: 0 0 4px 0;}
+}
