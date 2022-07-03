@@ -1,0 +1,7 @@
+@import url(https://font.elice.io/EliceDigitalBaeum.css);
+
+* {margin: 16px 16px 16px 16px; padding: 0 0 0 0;
+    font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif;
+    background-color: rgb(21, 77, 141);
+    color: whitesmoke;
+}
