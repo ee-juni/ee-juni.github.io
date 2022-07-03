@@ -1,0 +1,27 @@
+@import url(https://font.elice.io/EliceDigitalBaeum.css);
+html { font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif; margin: 10px 0 0 10px;}
+
+header {background-color: rgb(46, 80, 151);
+        color: white; width: 35%; padding: 10px 10px 10px 10px;
+    }
+
+html {background-color: rgb(66, 100, 171); color: whitesmoke;}
+
+#nav>ul>li { display: inline; padding: 0 20px 0 0; font-size: large;}
+nav {height: 30px; padding: 0 0 10px 0;}
+a {color: white;}
+
+img {width: 90%; margin: 10px 10px 10px 10px;}
+
+#major { background-color: rgb(115, 144, 205); padding: 10px 10px 10px 10px; width: 35%;}
+
+#basic_info
+
+#line { margin: 0 0 0 10px; padding: 10px 0 10px 10px;}
+
+#line1 { float: left; }
+#line2 { float: right; margin: 0 150px 0 0;}
+
+#divider { clear: both; }
+
+#footer { clear: both; background-color: rgb(47, 64, 79); height: 50px; padding: 5px 5px 5px 5px;}

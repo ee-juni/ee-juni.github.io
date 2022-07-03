@@ -1,0 +1,18 @@
+@import url(https://font.elice.io/EliceDigitalBaeum.css);
+
+* {margin: 16px 16px 16px 16px; padding: 0 0 0 0;
+    font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif;
+    background-color: rgb(115, 26, 47);
+    color: whitesmoke;
+    font-size: large;
+}
+
+#hd1 {float: left; margin: 32px 16px 0 0; font-size: xx-large;}
+#hd2 {float: right; margin: 32px 16px 0 0;}
+.main {clear: both; padding: 32px 0 0 32px;}
+
+@media (min-width: 200px) and (max-width: 1000px) {
+    * {margin: 4px 0 0 4px;}
+    .main {margin: 16px 0 0 4px; font-size:smaller;}
+    
+}
