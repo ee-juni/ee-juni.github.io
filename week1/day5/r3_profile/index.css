@@ -1,0 +1,99 @@
+@import url(https://font.elice.io/EliceDigitalBaeum.css);
+html { font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif; margin: 10px 10px 10px 10px;}
+
+header, #major { width: 30%;}
+
+/* #major>h2 {transform: scale(0.95); background-color: rgb(238, 164, 6); 
+        width: 100%; height: 150%; text-align: center;} */
+
+header {background-color: rgb(46, 80, 151);
+        color: white; padding: 10px 10px 10px 10px;
+    }
+
+html {background-color: rgb(66, 100, 171); color: whitesmoke;}
+
+#nav>ul>li { display: inline; font-size: large;}
+nav {height: 30px; padding: 0 0 10px 0;}
+a {color: white;}
+
+img {width: 95%; margin: 10px 10px 10px 10px;}
+
+#major { background-color: rgb(115, 144, 205); padding: 10px 10px 10px 10px;}
+#major>h1, #major>h2 { padding: 0 0 0 10px;}
+#basic_info
+
+#line { margin: 0 0 0 10px; padding: 10px 0 10px 10px;}
+
+.container { display: grid; grid-template-columns: auto auto auto; margin: 20px 0 20px 20px;}
+.item:nth-child(1) { 	
+    grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2; }
+.item:nth-child(2) { 	
+    grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3; }
+.item:nth-child(3) { 	
+    grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2; }
+.item:nth-child(4) { 	
+    grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3; }
+
+#footer { clear: both; background-color: rgb(36, 69, 92); height: 50px; padding: 5px 0 10px 0;}
+#footer>ul>li { display: inline; padding: 0 20px 0 0;}
+#years {list-style: none; padding: 0 0 0 15px;}
+
+#major {float: left;}
+.container {float: left; margin: 200px 0 150px 20px;}
+
+@media (min-width:300px) and (max-width:1000px){
+	.item:nth-child(1) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2; }
+	.item:nth-child(2) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3; }
+	.item:nth-child(3) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-end: 4; }
+	.item:nth-child(4) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 4;
+		grid-row-end: 5; }
+	#footer { clear: both; background-color: rgb(36, 69, 92); height: 65px; padding: 2px 0 30px 0; margin: 30px 0 0 0;}
+	#footer>ul>li { font-size:smaller; display: block; padding: 0 20px 0 0;}
+	header, #major { width: 90%;}
+	.container {padding: 0 0 0 0; margin: 20px 0 20px 0;}
+	#name {font-size: large;}
+	#cv {font-size: larger;}
+	#years {font-size: smaller; padding: 0 0 0 0;}
+	#years>li {margin: 0 0 4px 0;}
+}
+
+li:hover {
+	animation: transform 0.1s linear;
+	animation-fill-mode: both;
+}
+@keyframes transform {
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.01);
+	}
+	
+}
