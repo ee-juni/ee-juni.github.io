@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            function printExpression(value) {
+                document.querySelector("#expression").innerHTML += value;
+            }
+            function printExpression2(value) {
+                document.querySelector("#expression").innerHTML += " ";
+                document.querySelector("#expression").innerHTML += value;
+                document.querySelector("#expression").innerHTML += " ";
+            }
+            function clearExpression() {
+                document.querySelector("#expression").innerHTML = "";
+            }
+
+            function calculate(){
+                let expression = document.querySelector("#expression").innerHTML;
+                document.querySelector("#expression").innerHTML = eval(expression);
+            }
+    </script>
+    <style>
+        body {width: 50%; font-size: small;}
+    </style>
+</head>
+<body>
+    <h1>계산기</h1>
+    <input type="button" value="0" onclick="printExpression(0)" />
+    <input type="button" value="1" onclick="printExpression(1)" />
+    <input type="button" value="2" onclick="printExpression(2)" />
+    <input type="button" value="3" onclick="printExpression(3)" />
+    <input type="button" value="4" onclick="printExpression(4)" />
+    <input type="button" value="5" onclick="printExpression(5)" />
+    <input type="button" value="6" onclick="printExpression(6)" />
+    <input type="button" value="7" onclick="printExpression(7)" />
+    <input type="button" value="8" onclick="printExpression(8)" />
+    <input type="button" value="9" onclick="printExpression(9)" />
+    <input type="button" value="+" onclick="printExpression2('+')" />
+    <input type="button" value="-" onclick="printExpression2('-')" />
+    <input type="button" value="*" onclick="printExpression2('*')" />
+    <input type="button" value="/" onclick="printExpression2('/')" />
+    <input type="button" value="%" onclick="printExpression2('%')" />
+    <input type="button" value="C" onclick="clearExpression()" />
+    
+    <div id="expression"></div>
+    <input type="button" value="계산" onclick="calculate()" />
+
+</body>
+</html>

@@ -58,8 +58,10 @@ document.write("Hello Elice~")
 document.write("<br/>");
 document.write("Hello Elice~ <br/>")
 document.write("<br/>");
-document.write("Hello\
-Elice~")
+document.write("Hello\  
+Elice~")                 //코드 중 줄바꿈
+document.write(`Hello  
+Elice~`)                 // \ 안 쓰고 `쓰면 됨 
 document.write("<br/>");
 document.write("Hello
 Elice~")
