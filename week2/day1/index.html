@@ -1,46 +1,59 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://font.elice.io/EliceDigitalBaeum.css);
+            html, body {
+                    font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif; 
+                }
 
-<html>
+            html {margin: 0 0 0 5%; padding: 0 0 0 0; }
+            header, h2, h3, img {width: 90%;}
 
-  <head>
-    <meta charset="UTF-8"/>
-    <title>Web_101</title>
-  </head>
+            body { background-color: rgb(16, 77, 112) ;
+                    color: whitesmoke; }
 
-  <body bgcolor="#36454F">
-    <h1 style="color: rgb(225, 167, 75)">Hello, World!</h1>
-    <h2 style="color: rgb(230, 114, 125)">Hi, baby</h2>
-    <img
-    src="https://images.unsplash.com/photo-1534996858221-380b92700493?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"
-    alt="Earth is beautiful"
-  />
-    <a
-      href="https://ko.wikipedia.org/wiki/%22Hello,_World!%22_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8"
-      targets="_blank"
-      style="color: rgb(164, 174, 183)"
-      >웹 페이지 보기</a
-    >
-    <div style="background-color: #eee7e7">
-      <p style="color: rgb(95, 95, 95)">
-        <strong>"Hello, World!" 프로그램</strong> (세상아, 안녕!)은 <em>"Hello, World!"</em>를 화면에
-        출력하는 컴퓨터 프로그램이다. <br/>
-          이 프로그램은 프로그래밍 언어를 연습하는
-          데에 많이 쓰이고, 많은 프로그래밍 언어 서적에서 가장 처음 만들어보는 기본
-          예제로 나온다. <strong>"Hello, World!" 프로그램</strong>은 프로그래밍 언어로 할 수 있는
-          간단한 것 중 하나이다. <span style="font-weight: bold;"">그러나,</span> GUI를 사용할 때를 비롯하여, 어떤 경우에는
-          코드가 대단히 복잡해질 수 있다. 또 다른 경우에는 프로그램 자체는
-          간단하지만 CLI 셸에서 입력해야 하는 파라미터가 많아 복잡한 경우도 있다. 또
-          임베디드 시스템에서는 글자들이 한정된 한두 줄의 LCD에 표시될 것이다. 더욱
-          심한 경우에는 글자를 표시할 수 없어 <em>"Hello World!"</em> 대신에 간단하게 LED 점
-          등을 할 수도 있다.</p>  
-      <p style="color: rgb(55, 94, 123)">다른 언어의 Hello World</h4>
-      <ul style="color: rgb(68, 170, 104); list-style-type: disc">
-        <li>C언어 | printf("Hello World!")</li>
-        <li>Python | print("Hello, World!")</li>
-      </ul>
-  </div>
+            header { background-color: rgb(59, 118, 160); }
 
+            h1 { background-color: rgb(255, 180, 31); text-align: center;}
+            h2 { background-color: rgb(255, 172, 5); text-align: center; }
+            h3 { background-color: rgb(59, 109, 144); text-align-last: center;}
+            h4 { background-color: rgb(37, 95, 137); width: 100%; text-align: center; }
 
-  </body>
+            a { color: rgb(252, 231, 188); font-weight: 90rem;}
+            li { color: rgb(252, 231, 188);}  
+    </style>
+</head>
+<body>
+    <header>
+    <div>
+        <h1>2-1 Notes<br/>[ JavaScript ]</h1>
+        <h4>학습 목차</h4>
+        <nav>
+            <ol>
+                <li><a href="#1">Media Query</a></li>
+            </ol>
+        </nav>
+    </div>
+    </header>
+    <main>
+    <article>
+        <h2 id="1">1. Media Query</h2>
+        <p>Used to make <b>reactive</b> and <b>adaptive</b> websites for different browsing devices.</p>
+    </article>
+    <article>
+        <h2 id="2">2. Precautions</h2>
+        <h3>viewport</h3>
+        <p><b>..meta name="viewport" content=“width=device-width, initial-scale=1.0”..</b></p>
+        기기의 화면 상에 표시되는 영역 의미. 너비&배율 설정.
+        <h3>CSS 속성 상속</h3>
+        <p>미디어쿼리 외부에 명시된 속성 상속 받음. 싫으면 속성값: none 명시.</p>
+    </article>
+    </main>
+</body>
+</html> 
 
-</html>
