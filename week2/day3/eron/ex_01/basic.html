@@ -1,0 +1,38 @@
+<h2>숫자와 문자열</h2>
+    <script>
+      document.write(1 + 1);
+      document.write("<br>");
+      document.write("1" + "1"); // 문자열을 더하면
+      document.write("<br>");
+      document.write(typeof (1 + "1")); // 숫자랑 문자열을 더하면 2? 11?
+      document.write("<br>");
+      document.write(typeof ("11" - "1")); // 문자열을 빼면?
+      document.write("<br>");
+    </script>
+
+<script>
+  let animal = {
+    cow: "🐄",
+    pig: "🐖",
+    camel: "🐫",
+    crying: function () {
+      document.write("멍멍");
+      return "리턴값";
+    },
+  };
+  function crying2() {
+    document.write("멍멍");
+    return "리턴값";
+  }
+  console.log(animal);
+  document.write(animal);
+  document.write("<br>");
+  document.write(animal.cow);
+  document.write("<br>");
+  document.write(animal["cow"]);
+  document.write("<br>");
+  document.write(JSON.stringify(animal));
+  document.write("<br>");
+  let 변수 = animal.crying();
+  let 변수2 = crying(); // 함수명만 바로 입력
+</script>

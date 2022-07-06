@@ -1,0 +1,37 @@
+<h2>파이썬</h2>
+    <p style="border: 1px solid black">
+      Python is
+      <span
+        style="background-color: gray; padding: 0 5px; cursor: pointer"
+        onclick="
+        this.style.display = 'none';
+        document.querySelector('#python-explain').style.display = 'inline';
+        "
+      >
+        ...
+      </span>
+      <span id="python-explain" style="display: none">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque
+        dolore fugiat quia dolores? Sed sit quod, perferendis, adipisci
+        voluptate mollitia nemo earum aperiam minus ab repellat consequatur
+        repellendus rem.
+      </span>
+    </p>
+<input
+  id="nd"
+  type="button"
+  value="Night Mode"
+  onclick="
+if (document.querySelector('#nd').value == 'Night Mode'){
+        document.querySelector('#nd').value = 'Day Mode';
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('p').style.borderColor = 'white';
+    }else{
+        document.querySelector('#nd').value = 'Night Mode';
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('p').style.borderColor = 'black';
+}
+"
+/>
