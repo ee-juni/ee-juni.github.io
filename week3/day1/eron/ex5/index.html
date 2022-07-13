@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* /////////////////////////////////////////////////////////////////////////////// */
+        @import url(https://font.elice.io/EliceDigitalBaeum.css);
+        html {margin: 16px 16px 16px 16px; padding: 0px 0px 0px 0px}
+        html {color: white; background-color: darkolivegreen; font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif;}
+        a {color: whitesmoke}
+
+        .box{
+            width: 300px;
+            height: 180px;
+            margin:10px 0;
+            background: gray;
+            text-align: center;
+            padding: 30px;
+        }
+
+
+        /* /////////////////////////////////////////////////////////////////////////// */
+        </style>
+</head>
+<body>
+
+    <div class="box">마우스를 박스에서 움직여보세요.</div>
+
+
+    <script>
+        //////////////////////////////////////////////////////////////////////////////
+        const box = document.querySelector('.box');
+        box.addEventListener('mousemove',e=>{
+            console.log(e.offsetX,e.offsetY);
+            box.textContent = `x: ${e.offsetX}, y: ${e.offsetY}`;
+        });
+
+        
+        //////////////////////////////////////////////////////////////////////////////
+    </script>
+</body>
+
+</html>

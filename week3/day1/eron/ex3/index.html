@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* /////////////////////////////////////////////////////////////////////////////// */
+        @import url(https://font.elice.io/EliceDigitalBaeum.css);
+        html {margin: 16px 16px 16px 16px; padding: 0px 0px 0px 0px}
+        html {color: white; background-color: darkolivegreen; font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif;}
+        a {color: whitesmoke}
+
+
+        /* /////////////////////////////////////////////////////////////////////////// */
+        </style>
+</head>
+<body>
+    <h3>attribute</h3>
+    <a href="https://www.naver.com" target="_blank">link</a>
+    <p id="att" class="error">Att Me</p>
+
+
+    
+    <script>
+        //////////////////////////////////////////////////////////////////////////////
+        const link = document.querySelector('a');
+        console.log(link);
+        // 속성값 가져오기
+        link.setAttribute('href', 'https://www.google.com');
+        link.innerHTML = '역시 검색은 구글';
+        
+        const att = document.getElementById("att");
+        att.setAttribute('style','color: orange')
+
+        att.classList.remove('error');
+        att.classList.add('success');
+        
+        //////////////////////////////////////////////////////////////////////////////
+    </script>
+</body>
+
+</html>

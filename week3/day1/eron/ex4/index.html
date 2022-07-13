@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* /////////////////////////////////////////////////////////////////////////////// */
+        @import url(https://font.elice.io/EliceDigitalBaeum.css);
+        html {margin: 16px 16px 16px 16px; padding: 0px 0px 0px 0px}
+        html {color: white; background-color: darkolivegreen; font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif;}
+        a {color: whitesmoke}
+
+        li{
+            list-style-type: none;
+            max-width: 200px;
+            padding: 8px;
+            margin: 8px auto;
+            background-color: grey;
+            border: 1px dotted #ddd;
+            text-align: center;
+        }
+
+        /* /////////////////////////////////////////////////////////////////////////// */
+        </style>
+</head>
+<body>
+    <h2>배고파?</h2>
+    <ul>
+        <li>치킨주문</li>
+        <li>피자주문</li>
+        <li>라면주문</li>
+        <li>커리주문</li>
+    </ul>
+    <button>주문하기</button>
+    
+    <script>
+        //////////////////////////////////////////////////////////////////////////////
+        
+        //Element.addEventListener( 감지할 이벤트, 실행할 함수 )
+        //Element.addEventListener( type, listner(입력변수가 하나인 function) )
+
+        const orders = document.querySelectorAll("li");
+        orders.forEach(order=>{
+            order.addEventListener('click', ev=>{
+                console.log(ev.target);
+                console.log(order);
+                ev.target.remove();
+                console.log(`${ev.target.innerText} 주문이 완료되었습니다.`)
+            })            
+        });
+        const ul = document.querySelector('ul');
+        const btn = document.querySelector("button");
+        btn.addEventListener('click',ev=>{
+            const li = document.createElement('li');
+            li.textContent = 'I like Coke';
+            //ul.prepend(li);
+            ul.append(li);
+        })
+
+        //////////////////////////////////////////////////////////////////////////////
+    </script>
+</body>
+
+</html>
