@@ -1,0 +1,16 @@
+<script>
+
+    function addCallBack(fn){
+        ////2.
+        setTimeout(()=>{
+            let sum = 1+1;
+            console.log(sum);
+            fn(); //callback
+        },2000 ); // 2초 뒤에 코드가 실행됨
+    }
+    
+    addCallBack(function(){
+        console.log('end')
+    });
+
+</script>

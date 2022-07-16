@@ -1,0 +1,32 @@
+<script>
+// scope, chain 개념 익히기 //
+
+a_global = 'a_global';
+var a_var = 'a_var';
+let a_let = 'a_let';
+const a_const = 'a_const';
+
+console.log(a_global,a_var,a_let,a_const);
+console.log(window.a_global, window.a_var, window.a_let, window.a_const);
+              //// a_global     a_var       undefined      undefined
+              ////  global      global        script        script
+/////////////////////////////////////////////////////////////////////////////
+
+function fn2(){
+    c_global = 'c_global';
+    var c_var = 'c_var';
+    let c_let = 'c_let';
+    const c_const = 'c_const';
+}
+
+function fn1(){
+    b_global = 'b_global';  //전역
+    var b_var = 'b_var';    //전역
+    let b_let = 'b_let';    //지역
+    const b_const = 'b_const';  //지역
+    fn2();
+}
+
+fn1();
+
+</script>

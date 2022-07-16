@@ -1,0 +1,26 @@
+<script>
+
+const Clock = {
+  getCurrentTime: function (date) {
+    // 현재 시간 문자열을 만들어 리턴하세요.
+    // date가 Date 객체의 인스턴스가 아니라면 에러 메시지를 리턴하세요.
+    if(date instanceof Date){
+        y = date.getFullYear();
+        m = date.getMonth();
+        d = date.getDate();
+        h = date.getHours();
+        mn = date.getMinutes();
+        s = date.getSeconds();
+        return `현재 시간은 ${y}년 ${m}월 ${d}일 ${h}시 ${mn}분 ${s}초 입니다.`
+    }
+    else{
+        return "현재 시간을 구할 수 없습니다."
+    }
+  },
+};
+
+let d = new Date();
+let k = Clock.getCurrentTime(d);
+console.log(k);
+
+</script>
