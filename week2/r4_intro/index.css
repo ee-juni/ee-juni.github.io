@@ -1,30 +1,57 @@
 @import url(https://font.elice.io/EliceDigitalBaeum.css);
-html { font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif; margin: 10px 10px 10px 10px;}
 
-header, #major { width: 30%;}
+* {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
 
-/* #major>h2 {transform: scale(0.95); background-color: rgb(238, 164, 6); 
-        width: 100%; height: 150%; text-align: center;} */
+html { 
+	font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif; 
+	background-color: #264653;
+	color: whitesmoke;
+}
 
-header {background-color: rgb(46, 80, 151);
-        padding: 10px 10px 10px 10px;
-    }
+header {
+    width: 100%;
+	height: 60px;
+	position: fixed;
+	background-color: #000000;
+}
 
-html {background-color: rgb(66, 100, 171); color: whitesmoke;}
-a {color: whitesmoke;}
+nav>ul {
+	margin: 1% 10% 0 20%;
+}
 
-#nav>ul>li { display: inline; font-size: large; margin: 4px 4px 4px 4px;}
-nav {height: 30px; padding: 0 0 10px 0;}
+nav>ul>li {
+	display: inline;
+	float: left;
+	font-size: larger;
+	margin: 0 10% 0 10%;
+}
 
-img {width: 95%; margin: 10px 10px 10px 10px;}
+.a {color: #E76F51; 	background-color: #000000;}
 
-#major { background-color: rgb(115, 144, 205); padding: 10px 10px 10px 10px;}
-#major>h1, #major>h2 { padding: 0 0 0 10px;}
-#basic_info
+.name1 {
+	padding: 20% 0 30% 0;
+	text-align: center;
+	font-size: xx-large;
+}
+.name2 {
+	padding: 20% 0 20% 0;
+	text-align: center;
+	font-size: xx-large;
+}
 
-#line { margin: 0 0 0 10px; padding: 10px 0 10px 10px;}
+h1 {
+	color: #F4A261;
+}
+img {
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
 
-.container { display: grid; grid-template-columns: auto auto auto; margin: 20px 0 20px 20px;}
+.container { display: grid; grid-template-columns: auto auto auto; padding: 0 3% 10% 3%}
 .item:nth-child(1) { 	
     grid-column-start: 1;
 	grid-column-end: 2;
@@ -45,13 +72,24 @@ img {width: 95%; margin: 10px 10px 10px 10px;}
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 3; }
+.item { 
+	padding: 40px 40px 40px 40px;
+	font-size: medium;
+}
+.item>h3{
+	padding: 0 0 10px 0;
+	color: #3abeaf;
+}
+.item>ul>li>strong{
+	color: #b4ede0;
+}
 
-#footer { clear: both; background-color: rgb(36, 69, 92); height: 50px; padding: 5px 0 10px 0;}
-#footer>ul>li { display: inline; padding: 0 20px 0 0;}
-/* #years {padding: 0 0 0 15px;} */
-
-#major {float: left;}
-.container {float: left; margin: 200px 0 150px 20px;}
+#footer>ul>li {list-style: none; display: inline; margin: 0 20px 0 20px;
+	color: #f9a064
+}
+#footer>ul>li>b {color: #E76F51}
+#footer {margin: 0 10% 0 10%}
+#nd {font-family: "Elice Digital Baeum" ;}
 
 @media (min-width:300px) and (max-width:1000px){
 	.item:nth-child(1) { 	

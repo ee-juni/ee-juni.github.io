@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Juni</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+
+  <body>
+
+    <header>
+      <nav>
+        <div id="nav">
+          <ul>
+            <li><a href="https://github.com/ee-juni",target="_blank">GitHub</a></li>
+            <li><a href="https://instagram.com/jj_lee_98",target="_blank">Instagram</a></li>
+          </ul>  
+        </div>
+        </nav>
+    </header>
+
+    <main>
+    <div id="major">
+      <h1 id="cv">About Me</h1> 
+      <h2 id="name">이준의 | Juni Lee | 李俊義</h2>
+      <img src="im.png"/>
+    </div>
+    <div class="container" id="minor">
+        <div class="item">
+          <h3>Role Interest & Goals</h3>
+          <ul id="basic_info">
+            <li><strong>Role:</strong> ML Engineer<br/></li>
+            <li><strong>Goal 1:</strong> Full-stack Developer<br/></li>
+            <li><strong>Goal 2:</strong> Git Master</li>
+          </ul>  
+        </div>
+        <div class="item">
+          <h3>Interest Topics</h3>
+          <ul>
+            <li>AI/ML/DL</li>
+            <li>App dev.(Flutter)</li>
+            <li>BCI, Neuro-engineering</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Expectations</h3>
+          <ul>
+            <li>Habitualize growth & challenge</li>
+            <li>Make new interpersonal connections</li>
+            <li>Have fun & enjoy coding :)</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Fun Facts</h3>
+          <ul id="years">
+            <li>Lived in South Africa (6 years)</li>
+            <li>Enjoy singing, dancing, drinking</li>
+            <li>Love nature & animals</li>
+            <li>Art & Food == LIFE</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Lastly...</h3>
+          <p>Let's all reach our goals~^^</p>
+        </div>
+    </div>
+    
+  </main>
+    <footer>
+    <div id="footer">
+      <ul style="list-style:none">
+        <li><b>Author by:</b> Juni Lee</li>
+        <li><b>Copyright</b> 2021-2022 JLee Company. All rights reserved.</li>
+      </ul>
+      <input
+  id="nd"
+  type="button"
+  style="margin: 16px 4px 4px 4px; padding: 4px 4px 4px 4px; background-color: yellow; color: black;"
+  value="Banana"
+  onclick="
+if (document.querySelector('#nd').value == 'Banana'){
+        document.querySelector('#nd').value = 'Evening';
+        document.querySelector('#nd').style.backgroundColor = 'navy';
+        document.querySelector('#nd').style.color = 'white';
+        document.querySelector('header').style.backgroundColor = 'brown';
+        document.querySelector('html').style.backgroundColor = 'yellow';
+        document.querySelector('#major').style.backgroundColor = 'yellowgreen';
+        document.querySelector('#footer').style.backgroundColor = 'lightyellow';
+        document.querySelector('html').style.color = 'black';
+      }else{
+        document.querySelector('#nd').value = 'Banana';
+        document.querySelector('#nd').style.backgroundColor = 'yellow';
+        document.querySelector('#nd').style.color = 'black';
+        document.querySelector('header').style.backgroundColor = 'rgb(46,80,151)';
+        document.querySelector('html').style.backgroundColor = 'rgb(66,100,171)';
+        document.querySelector('#major').style.backgroundColor = 'rgb(115,144,205)';
+        document.querySelector('#footer').style.backgroundColor = 'rgb(36,69,92)';
+        document.querySelector('html').style.color = 'white';
+}
+"
+/>
+    </div>
+  </footer>
+
+  </body>
+
+</html>
