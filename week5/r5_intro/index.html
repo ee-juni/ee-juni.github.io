@@ -12,9 +12,9 @@
     <header>
       <nav>
         <ul>
-          <li><a href="" ,target="_blank">Home</a></li>
-          <li><a href="https://instagram.com/jj_lee_98" ,target="_blank">Instagram</a></li>
-          <li><a href="https://github.com/ee-juni" ,target="_blank">GitHub</a></li>
+          <li><a class="a", href="" ,target="_blank">Home</a></li>
+          <li><a class="a", href="https://instagram.com/jj_lee_98" ,target="_blank">Instagram</a></li>
+          <li><a class="a", href="https://github.com/ee-juni" ,target="_blank">GitHub</a></li>
         </ul>
       </nav>
     </header>
@@ -89,27 +89,42 @@
   id="nd"
   type="button"
   style="margin: 16px 4px 4px 4px; padding: 4px 4px 4px 4px; background-color: yellow; color: black;"
-  value="Banana"
+  value="Tropical"
   onclick="
-if (document.querySelector('#nd').value == 'Banana'){
-        document.querySelector('#nd').value = 'Evening';
-        document.querySelector('#nd').style.backgroundColor = 'navy';
-        document.querySelector('#nd').style.color = 'white';
-        document.querySelector('header').style.backgroundColor = 'brown';
-        document.querySelector('html').style.backgroundColor = 'yellow';
-        document.querySelector('#major').style.backgroundColor = 'yellowgreen';
-        document.querySelector('#footer').style.backgroundColor = 'lightyellow';
-        document.querySelector('html').style.color = 'black';
+if (document.querySelector('#nd').value == 'Tropical'){
+        document.querySelector('#nd').value = 'Gloom';
+        document.querySelector('#nd').style.backgroundColor = '#264653';
+        document.querySelector('#nd').style.color = 'white';  
+        //Make Tropical Mode
+        document.querySelector('header').style.backgroundColor = '#F52549';
+        document.querySelector('html').style.backgroundColor = '#FFD54D';
+        document.querySelector('*').style.color = 'black';
+        document.querySelector('.name1>h1').style.color = '#F96574';
+        document.querySelector('.name2>h1').style.color = '#F96574';
+        document.querySelectorAll('.a').forEach(el=>{el.style.color = '#FFFFFF';})
+        document.querySelectorAll('.a').forEach(el=>{el.style.backgroundColor = '#F52549';})
+        document.querySelectorAll('.item>h3').forEach(el=>{el.style.color = '#99BE1B';})
+        document.querySelectorAll('.item>ul>li>strong').forEach(el=>{el.style.color = '#99BE1B';})
+        document.querySelectorAll('#footer>ul>li').forEach(el=>{el.style.color = '#F52549';})
+        document.querySelectorAll('#footer>ul>li>b').forEach(el=>{el.style.color = '#F52549';})
+        
       }else{
-        document.querySelector('#nd').value = 'Banana';
-        document.querySelector('#nd').style.backgroundColor = 'yellow';
+        document.querySelector('#nd').value = 'Tropical';
+        document.querySelector('#nd').style.backgroundColor = '#FFD54D';
         document.querySelector('#nd').style.color = 'black';
-        document.querySelector('header').style.backgroundColor = 'rgb(46,80,151)';
-        document.querySelector('html').style.backgroundColor = 'rgb(66,100,171)';
-        document.querySelector('#major').style.backgroundColor = 'rgb(115,144,205)';
-        document.querySelector('#footer').style.backgroundColor = 'rgb(36,69,92)';
-        document.querySelector('html').style.color = 'white';
-}
+        //Make Dark Mode
+        document.querySelector('header').style.backgroundColor = '#000000';
+        document.querySelector('html').style.backgroundColor = '#264653';
+        document.querySelector('*').style.color = 'white';
+        document.querySelector('.name1>h1').style.color = '#F4A261';
+        document.querySelector('.name2>h1').style.color = '#F4A261';
+        document.querySelectorAll('.a').forEach(el=>{el.style.color = '#E76F51';})
+        document.querySelectorAll('.a').forEach(el=>{el.style.backgroundColor = '#000000';})
+        document.querySelectorAll('.item>h3').forEach(el=>{el.style.color = '#3abeaf';})
+        document.querySelectorAll('.item>ul>li>strong').forEach(el=>{el.style.color = '#b4ede0';})
+        document.querySelectorAll('#footer>ul>li').forEach(el=>{el.style.color = '#f9a064';})
+        document.querySelectorAll('#footer>ul>li>b').forEach(el=>{el.style.color = '#E76F51';})
+      }
 "
 />
         </li>
