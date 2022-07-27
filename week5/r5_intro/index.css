@@ -1,0 +1,122 @@
+@import url(https://font.elice.io/EliceDigitalBaeum.css);
+* { 
+	font-family: "Elice Digital Baeum", NaumGothicRound, sans-serif; 
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-color: rgb(66, 100, 171);
+	color: whitesmoke;
+}
+
+header {
+    width: 100%;
+	height: 60px;
+	position: fixed;
+	background-color: rgb(46, 80, 151);
+}
+nav>ul {
+	margin: 1% 10% 0 23%;
+}
+
+nav>ul>li {
+	display: inline;
+	float: left;
+	font-size: larger;
+	margin: 0 10% 0 10%;
+}
+a {color: whitesmoke; 	background-color: rgb(46, 80, 151);}
+
+.name1 {
+	padding: 20% 0 30% 0;
+	text-align: center;
+	font-size: xx-large;
+}
+.name2 {
+	padding: 20% 0 20% 0;
+	text-align: center;
+	font-size: xx-large;
+}
+
+img {
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.container { display: grid; grid-template-columns: auto auto auto; padding: 0 3% 10% 3%}
+.item:nth-child(1) { 	
+    grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2; }
+.item:nth-child(2) { 	
+    grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3; }
+.item:nth-child(3) { 	
+    grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2; }
+.item:nth-child(4) { 	
+    grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3; }
+.item { 
+	padding: 40px 40px 40px 40px;
+	font-size: x-large
+}
+.item>h3{
+	padding: 0 0 10px 0;
+}
+
+#footer>ul>li {list-style: none; display: inline; margin: 0 20px 0 20px}
+#footer {margin: 0 20% 0 20%}
+
+
+@media (min-width:300px) and (max-width:1000px){
+	.item:nth-child(1) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2; }
+	.item:nth-child(2) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3; }
+	.item:nth-child(3) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-end: 4; }
+	.item:nth-child(4) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 4;
+		grid-row-end: 5; }
+	#footer { clear: both; height: 65px; padding: 2px 0 30px 0; margin: 30px 0 0 0;}
+	#footer>ul>li { font-size:smaller; display: block; padding: 0 20px 0 0;}
+	header, #major { width: 90%;}
+	.container {padding: 0 0 0 0; margin: 20px 0 20px 0;}
+	#name {font-size: large;}
+	#cv {font-size: larger;}
+	#years {font-size: smaller; padding: 0 0 0 0;}
+	#years>li {margin: 0 0 4px 0;}
+}
+
+li:hover {
+	animation: transform 0.1s linear;
+	animation-fill-mode: both;
+}
+@keyframes transform {
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.01);
+	}
+	
+}
+
