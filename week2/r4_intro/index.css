@@ -58,22 +58,32 @@ img {
 	grid-row-start: 1;
 	grid-row-end: 2; }
 .item:nth-child(2) { 	
-    grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 2;
-	grid-row-end: 3; }
-.item:nth-child(3) { 	
     grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2; }
+.item:nth-child(3) { 	
+    grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2; }
 .item:nth-child(4) { 	
+    grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3; }
+.item:nth-child(5) { 	
     grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 3; }
+.item:nth-child(6) { 	
+    grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3; }
 .item { 
-	padding: 40px 40px 40px 40px;
+	padding: 20px 20px 20px 20px;
 	font-size: medium;
 }
 .item>h3{
@@ -91,7 +101,7 @@ img {
 #footer {margin: 0 10% 0 10%}
 #nd {font-family: "Elice Digital Baeum" ;}
 
-@media (min-width:300px) and (max-width:1000px){
+@media (min-width:300px) and (max-width:800px){
 	.item:nth-child(1) { 	
 		grid-column-start: 1;
 		grid-column-end: 2;
@@ -112,14 +122,25 @@ img {
 		grid-column-end: 2;
 		grid-row-start: 4;
 		grid-row-end: 5; }
-	#footer { clear: both; height: 65px; padding: 2px 0 30px 0; margin: 30px 0 0 0;}
-	#footer>ul>li { font-size:smaller; display: block; padding: 0 20px 0 0;}
-	header, #major { width: 90%;}
-	.container {padding: 0 0 0 0; margin: 20px 0 20px 0;}
-	#name {font-size: large;}
-	#cv {font-size: larger;}
-	#years {font-size: smaller; padding: 0 0 0 0;}
-	#years>li {margin: 0 0 4px 0;}
+	.item:nth-child(5) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 5;
+		grid-row-end: 6; }
+	.item:nth-child(6) { 	
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 6;
+		grid-row-end: 7; }
+	header {height: 8%;}
+	nav {height: 3%; margin-left:20%; margin-right:20%}
+	nav>ul {margin: auto auto auto auto;}
+	nav>ul>li {margin: 0 5px 0 5px}
+	nav>ul>li>a {font-size: smaller}
+	.name1 {padding: 15% 0 10% 0}
+	.name2 {padding: 10% 0 10% 0}
+	#footer {margin: 0 5% 0 5%}
+	#footer>ul>li {margin: 0 2% 0 2%}
 }
 
 li:hover {
