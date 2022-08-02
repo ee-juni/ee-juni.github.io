@@ -1,0 +1,17 @@
+... 
+
+
+form(action="/posts", method="post")
+    table
+        tbody
+            tr
+                th 제목
+                td: input(type="text" name="title")
+            tr
+                th 내용
+                td: textarea(name="content")
+            td
+                td(colspan="2")
+                    input(type="submit" value="등록")
+
+            

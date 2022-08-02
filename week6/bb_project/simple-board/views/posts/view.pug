@@ -1,0 +1,13 @@
+table
+    tbody
+        tr
+            td(colspan="2")= post.title 
+        tr
+            td= post.author
+            td= formateDate(post.createdAt)
+        tr
+            td(colspan="2"): pre= post.content
+        tr
+            td: a(href=`/posts/${post.shortId}?edit=true`) 수정
+            td: button(onclick='deletePost(`${post.shortId`)') 삭제
+            

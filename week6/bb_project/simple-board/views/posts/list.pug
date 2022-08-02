@@ -1,0 +1,10 @@
+table
+    tbody
+        each post in posts
+            tr
+                td a(href=`/posts/${post.shortId}`) = post.title
+                td= post.author
+                td= formatDate(post.createdAt)
+    tfoot
+        tr
+            td(colspan="3") a(href="/posts?write=true") 등록하기 
