@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Example</title>
+    </head>
+    <body>
+        <h2 id="number">0</h2>
+        <div>
+            <button id="increase">+1</button>
+            <button id="decrease">-1</button>
+        </div>
+    </body>
+    <script>
+        const number = document.getElementById('number')
+        const increase = document.getElementById('increase')
+        const decrease = document.getElementById('decrease')
+
+        increase.onclick = ()=>{const current = parseInt(number.innerText,10); number.innerText=current+1}
+        decrease.onclick = ()=>{const current = parseInt(number.innerText,10); number.innerText=current-1}
+
+    </script>
+</html>

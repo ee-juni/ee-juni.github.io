@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Example 2</title>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script>
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+        const App=()=>{
+            const a=3
+            const b=6
+            return <div>{a} + {b} = {a+b}</div>
+        }
+        ReactDOM.render(< App />, document.getElementById('root'));
+    </script>
+</html>
